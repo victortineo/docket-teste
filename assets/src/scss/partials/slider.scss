@@ -20,9 +20,9 @@
         justify-content: flex-end;
     }
     &--content{
-        flex-basis: 43%;
         color: $blue;
-        margin-right: 35px;
+        flex-basis: 80%;
+        margin: 0 auto;
     }
     &--head{
         font-size: 64px;
@@ -32,7 +32,6 @@
     }
     &--text{
         font-size: 22px;
-        width: 95%;
         margin: 0;
     }
     &--btn{
@@ -47,5 +46,22 @@
         max-width: 230px;
         font-weight: 700;
         text-align: center;
+    }
+}        
+
+@media screen and (min-width: 992px) {
+    .slider {
+        &--content{
+            flex-basis: 55%;
+            margin-right: 35px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .slider {
+        &--content{
+            flex-basis: 43%;
+            margin-right: 35px;
+        }
     }
 }
