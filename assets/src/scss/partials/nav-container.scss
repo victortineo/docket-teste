@@ -1,0 +1,22 @@
+.nav-container{
+    position: absolute;
+    bottom: 30px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex;
+    justify-content: center;
+    &:focus { outline-style: none; }
+    .nav{
+        display: block;
+        margin: 0 7px;
+        width: 50px;
+        border-bottom: 3px solid $gray;
+        &:focus { outline-style: none; }
+        &.tns-nav-active{
+            border-color: $blue;
+        }
+    }
+
+}

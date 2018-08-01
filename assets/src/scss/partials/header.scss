@@ -1,0 +1,41 @@
+.header{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        height: 110px;
+    }
+    &--logo{
+        display: flex;
+        align-items: center;
+        a{
+        }
+    }
+    &--itens{
+        display: flex;
+        align-content: center;
+        list-style: none;
+    }
+    &--item{
+        display: flex;
+        align-items: center;
+        margin: 0 15px;
+        font-size: 14px;
+        a{
+            color: $dark;
+            text-decoration: none;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ccc;
+            transition: ease-in .5s;
+            &:hover{
+                border-color: $blue;
+            }
+        }
+        span{
+            @media screen and (max-width: 350px) {
+                display: none;
+            }
+        }
+        
+    }
+}

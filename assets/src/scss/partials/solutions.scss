@@ -1,0 +1,75 @@
+.sol{
+    padding-bottom: 50px;
+    &--head{
+        text-align: center;
+        color: $blue;
+        font-size: 28px;    
+    }
+    &--content{
+        display:flex;
+        justify-content: center;
+    }
+    &--grid-item{
+        flex-basis: 33%;
+        margin: 0 1%;
+        padding: 30px 15px 15px;
+        border: 1px solid $light-gray;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &--grid-title{
+        font-size: 28px;
+        color: $blue;
+        line-height: 1.2;
+        z-index: 32;
+        font-weight: normal;
+        margin-bottom: 0;
+        strong{
+            font-weight: 700;
+        }
+    }
+    &--grid-head{
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 30px;
+        &.rip{
+            background-image: url('../img/rip.png')
+        }
+        &.marriage{
+            background-image: url('../img/marriage.png')
+        }
+        &.birth{
+            background-image: url('../img/birth.png')
+        }
+    }
+    &--grid-text{
+        font-size: 16px;
+        color: $blue;
+        line-height: 1.2;
+        z-index: 32;
+        font-weight: normal;
+        margin-bottom: 0;
+    }
+    &--btn{
+        margin-top: 30px;
+        padding: 20px;
+        background-color: $blue;
+        color: $white;
+        text-decoration: none;
+        border-radius: 5px;
+        display: block;
+        max-width: 230px;
+        width: 100%;
+        font-weight: 700;
+    }
+}
